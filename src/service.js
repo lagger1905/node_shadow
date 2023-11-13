@@ -83,7 +83,8 @@ class Manager {
       const response = await _request(this.apiList.inventAPI, _method.get);
       if (response?.data?.metadata?.total > 0) {
         // No of items > 0
-        response.data.data.forEach((element, index) => {
+        let inventList = response.data.data.reverse();
+        inventList.forEach((element, index) => {
           setTimeout(async () => {
             if (element.tradable) {
               const item = getInfoData({
