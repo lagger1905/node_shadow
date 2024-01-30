@@ -4,7 +4,7 @@ const config = require("../config.json");
 const _ = require("lodash");
 module.exports = {
   apiList: {
-    databaseUrl: "http://103.173.254.162:5000/item/api/buff/items",
+    databaseUrl: "http://103.173.254.162:5000/item/api/v1/buff/items",
     currencyUrl: "http://103.173.254.162:3000/get-currency",
   },
   discordChannel: "",
